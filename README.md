@@ -6,10 +6,10 @@ This project is a Python-based management system for handling student and teache
 There have been a lack of clarity in the intented output whether creating a single database or two databases each for student and teacher,  if you prefer single database just create `student_management` .
 
 
-Postman Api collection MachineTest-Navalt.postman_api_collection is also attached.
+Postman Api collection file MachineTest-Navalt.postman_api_collection is also attached.
 
 ## Features
-- **User Registration and Authentication**: Register and authenticate `student` and `teacher` users.
+- **User Registration and Login**: Register and for `student` and `teacher` users.
 - **CRUD Operations**: Add, update, view, and delete student records.
 - **Cross-Database Queries**: Retrieve information about students' assigned teachers, even across separate databases using PostgreSQL `dblink`.
 - **Logging**: Records login attempts with timestamped log entries.
@@ -38,7 +38,7 @@ Postman Api collection MachineTest-Navalt.postman_api_collection is also attache
         - `student_management` for student information
         - `teacher_management` for teacher information
     - Create PostgreSQL databases(Only one database, 2 tables: students and teachers):
-        - `student_management` for student information
+        - `student_management` for student and teacher information
         
 
 
