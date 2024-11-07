@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "student teacher mangment"
+version = "1"
+description = "Management System"
+authors = ["Aiswarya-AS <aiswaryaasubash@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+psycopg2 = "^2.9.10"
+flask = "^3.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

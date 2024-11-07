@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "55cb2e68-b4b7-4e0b-b9f7-47c16037b2b7",
+		"name": "MachineTest-Navalt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26291789"
+	},
+	"item": [
+		{
+			"name": "View Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/view_students"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_type\":\"student\",\r\n    \"name\":\"davis\",\r\n    \"email\":\"davis@gmail.com\",\r\n    \"password\":\"davis\",\r\n    \"db_name\":\"student_management\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_type\":\"student\",\r\n    \"email\":\"davis@gmail.com\",\r\n    \"password\":\"davis\",\r\n    \"db_name\":\"student_management\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sherly\",\r\n    \"email\":\"sherly@gmail.com\",\r\n    \"password\":\"sherly\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/add_student"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"student_id\":\"11\",\r\n    \"email\":\"sherly@gmail.com\",\r\n    \"name\":\"sherly2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/update_student"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"student_id\":11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/get_teachers/<int:id>"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Teacher Diff Db",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/get_teachers/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Teachers same Db",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:5000/get_teachers_same_db/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Map Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"student_id\":10,\r\n    \"teacher_id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/map_users"
+			},
+			"response": []
+		}
+	]
+}
